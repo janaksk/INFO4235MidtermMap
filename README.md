@@ -19,6 +19,6 @@ Then on your browser, you would open:
 
 ```
 
-http://localhost:8000/index.html
+http://localhost:8000/
 
 ```
