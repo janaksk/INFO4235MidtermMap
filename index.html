@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Locator</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+
+    #map {
+    /* Making Map have 100 viewport height, will make page more mobile responsive.     */
+    /* Did -10px to add margin because i noticed some screens mess up if its pure 100hv*/    
+    height: calc(100vh - 10px); 
+    }
+
+    #distance {
+    /* Align top middle */
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* Adjust Box */
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 1000;
+
+    /* Adjust Font */ 
+    font-size: 20px; 
+    font-weight: bold;
+    font-family: 'Calibri', sans-serif;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div id="map"></div>
+
+  <div id="distance">Calculating distance...</div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
